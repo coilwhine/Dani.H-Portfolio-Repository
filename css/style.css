@@ -237,7 +237,7 @@ header p {
 }
 
 .card1 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels1.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels1.jpg);
 }
 
 .card2 {
@@ -253,23 +253,23 @@ header p {
 }
 
 .card5 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels5.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels5.jpg);
 }
 
 .card6 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels6.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels6.jpg);
 }
 
 .card7 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels7.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels7.jpg);
 }
 
 .card8 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels8.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels8.jpg);
 }
 
 .card9 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels9.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels9.jpg);
 }
 
 footer {
