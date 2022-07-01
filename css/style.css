@@ -5,6 +5,11 @@
     font-weight: 400;
 }
 
+.all-content {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
 /* ---- elements ---- */
 
 h2 {
