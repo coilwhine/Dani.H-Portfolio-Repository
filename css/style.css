@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* ---- elements ---- */
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ---- section header ---- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(42, 42, 42);
+    padding: 9px 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+header p {
+    margin: 0;
+    margin-left: 10px;
+    color: rgb(209, 214, 219);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+    color: #fff;
+    transition: 200ms ease-out;
+}
+
+.nav-contact-link {
+    background-color: rgba(61, 166, 110);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(173, 227, 198, 0.300);
+    padding: 2px 10px;
+    transition: 200ms ease-out;
+}
+
+.nav-link:hover {
+    color: rgb(157, 228, 190);
+}
+
+.nav-contact-link:hover {
+    box-shadow: 0px 0px 5px 0px rgba(173, 227, 198, 0.300);
+    color: #fff;
+}
+
+/* ---- section Hero ---- */
+
+.hero-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+    padding: 50px;
+    padding-bottom: 130px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.974) 0%, rgba(61, 166, 110, 0.908) 47%, rgba(251, 203, 145, 0.958) 100%), url("/css/img/web-design-background.jpg");
+    background-size: cover;
+    box-shadow: 0px 10px 60px 5px rgba(3, 39, 47, 0.2);
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.hero-span {
+    font-size: 1.6rem;
+    color: rgb(45, 45, 45);
+}
+
+.hero-text p {
+    padding-right: 90px;
+}
+
+.hero-img img {
+    max-height: 350px;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 60px 10px rgba(245, 253, 255, 0.500);
+}
+
+/* ---- section contact ---- */
+
+#section-contact {
+    position: relative;
+    bottom: 100px;
+    background-color: #fff;
+    padding: 20px 25px;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 60px 5px rgba(3, 39, 47, 0.2);
+    max-width: 1130px;
+}
+
+.hero-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-form-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.hero-form input {
+    padding: 4px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.150);
+    background-color: rgb(251, 251, 251);
+
+}
+
+.form-btn button {
+    position: relative;
+    top: 0;
+    padding: 20px 80px;
+    margin-top: 20px;
+    border-style: none;
+    background-color: rgba(61, 166, 110);
+    border-radius: 10px;
+    box-shadow: 0px 10px 60px 5px rgb(173, 227, 198);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: 175ms ease-out;
+
+}
+
+.form-btn button:hover {
+    position: relative;
+    top: 1px;
+    box-shadow: 0px 1px 10px 5px rgb(173, 227, 198, 0.500);
+}
+
+.contact-p {
+    text-align: center;
+    margin: 20px 0 0;
+    color: rgb(136, 136, 136);
+}
+
+/* ---- section My work ---- */
+
+#section-my-work {
+    margin-top: -50px;
+}
+
+#section-my-work h2 {
+    margin-bottom: 40px;
+}
+
+.acards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.acard {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 270px;
+    height: 350px;
+    box-shadow: 0px 10px 60px 5px rgba(3, 39, 47, 0.250);
+    padding: 15px;
+    transition: 150ms ease-in-out;
+}
+
+.acard:hover {
+    position: relative;
+    bottom: 5px;
+    box-shadow: 0px 10px 20px 2px rgba(3, 39, 47, 0.250);
+}
+
+.acard p {
+    color: rgb(71, 71, 71);
+    margin-bottom: 5px;
+}
+
+.acard h4 {
+    color: rgb(40, 40, 40);
+    background-color: rgba(255, 255, 255, 0.180);
+    padding: 2px 2px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.card1 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels1.jpg);
+}
+
+.card2 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels2.jpg);
+}
+
+.card3 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels3.jpg);
+}
+
+.card4 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels4.jpg);
+}
+
+.card5 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels5.jpg);
+}
+
+.card6 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels6.jpg);
+}
+
+.card7 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels7.jpg);
+}
+
+.card8 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels8.jpg);
+}
+
+.card9 {
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(/css/img/pexels9.jpg);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(42, 42, 42);
+    padding: 9px 25px;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.bi {
+    margin: 5px 15px;
+    font-size: 1.4rem;
+    color: #fff;
+    transition: 200ms;
+}
+
+.bi:hover {
+    color: rgb(157, 228, 190);
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+/* ---- small leptop device ---- */
+
+@media screen and (max-width: 1200px) {
+
+    /* body {
+        background-color: blue;
+    } */
+
+    /* ---- section - hero ---- */
+
+    .hero-heading {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* ---- Ipad device ---- */
+
+@media screen and (max-width: 1000px) {
+
+    /* body {
+        background-color: green;
+    } */
+
+    /* ---- section - hero ---- */
+
+    .hero-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-heading {
+        align-items: center;
+    }
+
+
+    .hero-text p {
+        padding: 10px;
+    }
+
+    .hero-img img {
+        max-height: 300px;
+        margin-bottom: 0;
+    }
+
+    /* ---- section contact ---- */
+
+    .hero-form {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ---- mobile device ---- */
+@media screen and (max-width: 650px) {
+
+    /* body {
+        background-color: red;
+    } */
+
+    /* ---- section header ---- */
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        font-size: 0.7rem;
+    }
+
+    .nav-link {
+        color: rgb(157, 228, 190);
+        font-weight: 500;
+    }
+
+    .nav-contact-link {
+        color: #fff;
+    }
+
+    /* ---- section hero ---- */
+
+    .hero-text h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+
+    .hero-main {
+        padding: 10px 5px;
+        padding-bottom: 80px;
+    }
+
+    .hero-img img {
+        max-height: 180px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* ---- section contact ---- */
+
+    .hero-form-input {
+        flex-direction: column;
+    }
+
+    .hero-form input {
+        width: 90%;
+    }
+
+    .form-btn button {
+        position: relative;
+        top: 0;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+
+    /* ---- section footer ---- */
+
+
+    .bi {
+        margin: 5px 8px;
+        font-size: 2rem;
+    }
+}
