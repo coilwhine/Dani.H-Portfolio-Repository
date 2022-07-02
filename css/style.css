@@ -22,8 +22,20 @@ input {
 
 h2 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
+    margin: 40px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+h6 {
+    color: rgb(71, 71, 71);
+    margin-bottom: 5px;
+    font-weight: 400;
 }
 
 
@@ -224,12 +236,8 @@ header p {
 /* ---- section My work ---- */
 
 #section-my-work {
-    margin-top: -50px;
+    margin-top: -100px;
     scroll-margin-block-start: 110px;
-}
-
-#section-my-work h2 {
-    margin-bottom: 40px;
 }
 
 .acards {
@@ -274,12 +282,6 @@ header p {
     font-weight: 700;
 }
 
-.acard p {
-    color: rgb(71, 71, 71);
-    margin-bottom: 5px;
-    text-shadow: rgb(255, 255, 255) 1px 1px 2px;
-}
-
 .card1 {
     background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels1.jpg);
 }
@@ -293,7 +295,7 @@ header p {
 }
 
 .card4 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels4.jpg);
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels9.jpg);
 }
 
 .card5 {
@@ -312,9 +314,38 @@ header p {
     background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels8.jpg);
 }
 
-.card9 {
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.874) 0%, rgba(61, 166, 110, 0.108) 47%, rgba(251, 203, 145, 0.858) 100%), url(../css/img/pexels9.jpg);
+.acard h6 {
+    text-shadow: rgb(255, 255, 255) 1px 1px 4px;
 }
+
+#section-about-me {
+    scroll-margin-block-start: 110px;
+}
+
+.about-me-flex h6 {
+    color: rgb(67, 67, 67);
+    font-size: 0.9rem;
+}
+
+.about-me-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 95%;
+    margin: auto;
+}
+
+.about-me-paragraph {
+    max-width: 400px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.360) 0%, rgba(61, 166, 110, 0.300) 47%, rgba(251, 203, 145, 0.360) 100%);
+    box-shadow: 0px 10px 60px 5px rgba(3, 39, 47, 0.2);
+}
+
 
 footer {
     display: flex;
@@ -325,7 +356,7 @@ footer {
     padding: 9px 25px;
     color: #fff;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .bi {
@@ -345,12 +376,6 @@ footer p {
     font-size: 0.8rem;
     margin-top: 15px;
 }
-
-
-#section-about-me {
-    scroll-margin-block-start: 110px;
-}
-
 
 
 
