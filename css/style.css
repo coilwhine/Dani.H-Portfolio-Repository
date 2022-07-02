@@ -347,6 +347,13 @@ footer p {
 }
 
 
+#section-about-me {
+    scroll-margin-block-start: 110px;
+}
+
+
+
+
 
 
 
@@ -355,9 +362,9 @@ footer p {
 
 @media screen and (max-width: 1200px) {
 
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     /* ---- section - hero ---- */
 
@@ -372,9 +379,9 @@ footer p {
 
 @media screen and (max-width: 1000px) {
 
-    body {
+    /* body {
         background-color: green;
-    }
+    } */
 
     /* ---- section - hero ---- */
 
@@ -412,9 +419,9 @@ footer p {
 /* ---- mobile device ---- */
 @media screen and (max-width: 650px) {
 
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
 
     /* ---- section header ---- */
 
@@ -481,8 +488,4 @@ footer p {
         margin: 5px 8px;
         font-size: 2rem;
     }
-}
-
-#section-about-me {
-    scroll-margin-block-start: 110px;
 }
