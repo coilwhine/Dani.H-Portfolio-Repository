@@ -146,6 +146,10 @@ header p {
 }
 
 .hero-form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
