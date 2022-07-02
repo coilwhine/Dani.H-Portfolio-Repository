@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 
+input {
+    -webkit-appearance: none;
+}
+
 /* ---- elements ---- */
 
 h2 {
@@ -145,11 +149,6 @@ header p {
     flex-direction: column;
 }
 
-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
 
 .hero-form-input {
     display: flex;
@@ -164,7 +163,7 @@ input {
     border-style: none;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.150);
-    background-color: rgb(242, 247, 244);
+    background-color: rgb(252, 257, 254);
 
 }
 
