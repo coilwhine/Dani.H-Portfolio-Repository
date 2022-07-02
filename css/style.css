@@ -145,11 +145,13 @@ header p {
     flex-direction: column;
 }
 
-.hero-form-input {
+input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
 
+.hero-form-input {
     display: flex;
     align-items: center;
     justify-content: space-between;
