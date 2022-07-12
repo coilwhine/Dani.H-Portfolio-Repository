@@ -55,23 +55,23 @@
         </section>
 
         <section id="section-contact">
-            <form class="hero-form" onsubmit="submitContactMe()">
-                <div class="hero-form-inputs">
+            <form class="hero-form" onsubmit="return submitContactMe(event)">
+                <div class="hero-form-all-inputs">
                     <div class="hero-form-input">
                         <label for="fullName">Full name:</label>
-                        <input id="fullName" type="text" name="fullName" required>
+                        <input id="fullName" type="text" name="fullName">
                     </div>
                     <div class="hero-form-input">
                         <label for="email">Email:</label>
-                        <input id="email" type="email" name="email" required>
+                        <input id="email" type="email" name="email">
                     </div>
                     <div class="hero-form-input">
                         <label for="phoneNumber">Phone Number:</label>
-                        <input id="phoneNumber" type="tel" name="phoneNumber" required>
+                        <input id="phoneNumber" type="tel" name="phoneNumber">
                     </div>
                 </div>
                 <div class="form-btn">
-                    <button>Contact Me</button>
+                    <button type="submit">Contact Me</button>
                 </div>
             </form>
             <p class="contact-p">Leave your information and I will get back to you as soon as I can! 😃</p>

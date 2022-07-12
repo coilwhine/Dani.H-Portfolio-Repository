@@ -162,7 +162,7 @@ header p {
     justify-content: space-evenly;
 }
 
-.hero-form-inputs {
+.hero-form-all-inputs {
     display: flex;
     flex-direction: column;
 }
@@ -376,11 +376,6 @@ footer p {
     font-size: 0.8rem;
     margin-top: 15px;
 }
-
-
-
-
-
 
 
 /* ---- small leptop device ---- */
