@@ -4,30 +4,47 @@
 function submitContactMe(event) {
 
     event.preventDefault();
+    const firstName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
 
-    const firstName = document.getElementById('fullName')
-    const email = document.getElementById('email')
-    const phoneNumber = document.getElementById('phoneNumber')
-
-    if (firstName.value === '') {
-        firstName.focus()
-        return false
+    const newContact = {
+        firstName: firstName,
+        email: email,
+        phoneNumber: phoneNumber,
+        answered: false
     }
 
-    if (email.value === '') {
-        email.focus()
-        return false
+    let customerInquiries = window.localStorage.getItem('customerInquiries');
+    if (!customerInquiries) {
+        customerInquiries = [];
+    } else {
+        customerInquiries = JSON.parse(customerInquiries);
     }
 
-    if (phoneNumber.value === '') {
-        phoneNumber.focus()
-        return false
-    }
+    customerInquiries.push(newContact);
+
+    window.localStorage.setItem("customerInquiries", JSON.stringify(customerInquiries))
+
+    console.log(customerInquiries)
+
 
     document.querySelector('.hero-form').reset();
-
     document.querySelector('.contact-p').innerHTML = "Message received! 👍<br>I'll contact you in the next 24 hours";
+}
 
-    console.log(event)
 
+// ---- style labels of required inputs ----
+
+const input = document.getElementsByTagName("input");
+const label = document.getElementsByTagName("label");
+
+for (let i = 0; i < input.length; i++) {
+    if (input[i].hasAttribute('required')) {
+        for (let j = 0; j < label.length; j++) {
+            if (i === j) {
+                label[j].style.color = 'rgb(61, 166, 110)'
+            }
+        }
+    }
 }
