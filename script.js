@@ -26,7 +26,7 @@ function wellcomeText() {
             finalName += word + ' '
         }
 
-        document.querySelector('.welcome').innerText = `Wellcome back ${finalName}`
+        document.querySelector('.wellcomeText').innerText = `Wellcome back ${finalName}`
     }
 }
 
