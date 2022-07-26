@@ -64,8 +64,9 @@ header p {
     color: rgb(209, 214, 219);
 }
 
-.welcome {
+.wellcomeText {
     color: rgb(157, 228, 190);
+    font-weight: 500;
 }
 
 .nav-bar {
