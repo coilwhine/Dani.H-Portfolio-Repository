@@ -452,6 +452,7 @@ footer p {
 
 
 /* ---- mobile device ---- */
+
 @media screen and (max-width: 650px) {
 
     /* body {
@@ -480,6 +481,10 @@ footer p {
 
     .nav-contact-link {
         color: #fff;
+    }
+
+    .wellcomeText {
+        display: inline;
     }
 
     /* ---- section hero ---- */
@@ -518,7 +523,6 @@ footer p {
     }
 
     /* ---- section footer ---- */
-
 
     .bi {
         margin: 5px 8px;
