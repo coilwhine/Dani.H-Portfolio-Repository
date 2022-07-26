@@ -25,12 +25,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="onLoad()">
 
     <header>
         <div class="logo">
             <a href="#"><img class="logo-img" src="img/white-Logo.png" alt="Dani.H Logo"></a>
             <p>Full stack web developer</p>
+        </div>
+        <div>
+            <p class="welcome"></p>
         </div>
         <nav class="nav-bar">
             <a class="nav-link" href="#section-my-work">My Work</a>
@@ -58,16 +61,16 @@
             <form class="hero-form" onsubmit="submitContactMe(event)">
                 <div class="hero-form-all-inputs">
                     <div class="hero-form-input">
-                        <label for="fullName">Full name:</label>
+                        <label for="fullName">Full name</label>
                         <input id="fullName" type="text" name="fullName" minlength="2" maxlength="20" required>
                     </div>
                     <div class="hero-form-input">
-                        <label for="email">Email:</label>
+                        <label for="email">Email</label>
                         <input id="email" type="email" name="email" required>
                     </div>
                     <div class="hero-form-input">
-                        <label for="phoneNumber">Phone Number:</label>
-                        <input id="phoneNumber" type="tel" name="phoneNumber" minlength="10" maxlength="10">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" type="tel" name="phoneNumber" minlength="10" maxlength="13">
                     </div>
                 </div>
                 <div class="form-btn">

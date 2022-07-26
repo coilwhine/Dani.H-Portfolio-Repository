@@ -1,15 +1,44 @@
 
 // ---- contact me changes ----
 
+
+function onLoad() {
+    wellcomeText()
+}
+
+function wellcomeText() {
+    const customerInquiries = window.localStorage.getItem('customerInquiries');
+
+    if (customerInquiries) {
+        const customers = JSON.parse(customerInquiries);
+        const customer = customers[customers.length - 1];
+        let customerNameArray = (customer.fullName).toLowerCase().split(' ');
+
+        const nameArray = []
+        for (string of customerNameArray) {
+            let fLetter = string[0].toUpperCase()
+            let restLetters = (string.slice(1, string.length)).toLowerCase()
+            nameArray.push(fLetter + restLetters)
+        }
+
+        let finalName = ''
+        for (word of nameArray) {
+            finalName += word + ' '
+        }
+
+        document.querySelector('.welcome').innerText = `Wellcome back ${finalName}`
+    }
+}
+
 function submitContactMe(event) {
 
     event.preventDefault();
-    const firstName = document.getElementById('fullName').value;
+    const fullName = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
     const phoneNumber = document.getElementById('phoneNumber').value;
 
     const newContact = {
-        firstName: firstName,
+        fullName: fullName,
         email: email,
         phoneNumber: phoneNumber,
         answered: false
@@ -26,25 +55,11 @@ function submitContactMe(event) {
 
     window.localStorage.setItem("customerInquiries", JSON.stringify(customerInquiries))
 
-    console.log(customerInquiries)
-
 
     document.querySelector('.hero-form').reset();
-    document.querySelector('.contact-p').innerHTML = "Message received! 👍<br>I'll contact you in the next 24 hours";
-}
+    document.querySelector('.contact-p').innerText = "Message received! 👍 I'll\ncontact you in the next 24 hours";
 
+    setTimeout(function () { document.querySelector('.contact-p').innerText = 'Leave your information and I will get back to you as soon as I can! 😃'; }, 5000);
 
-// ---- style labels of required inputs ----
-
-const input = document.getElementsByTagName("input");
-const label = document.getElementsByTagName("label");
-
-for (let i = 0; i < input.length; i++) {
-    if (input[i].hasAttribute('required')) {
-        for (let j = 0; j < label.length; j++) {
-            if (i === j) {
-                label[j].style.color = 'rgb(61, 166, 110)'
-            }
-        }
-    }
+    wellcomeText()
 }
