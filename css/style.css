@@ -67,6 +67,8 @@ header p {
 .wellcomeText {
     color: rgb(157, 228, 190);
     font-weight: 500;
+    margin: 0;
+    text-align: center;
 }
 
 .nav-bar {
@@ -424,6 +426,9 @@ footer p {
         align-items: center;
     }
 
+    .wellcomeText {
+        display: none;
+    }
 
     .hero-text p {
         padding: 10px;
