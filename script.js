@@ -63,3 +63,15 @@ function submitContactMe(event) {
 
     wellcomeText()
 }
+
+function prophesional(e) {
+    const toolTip = document.getElementById('tool-tip');
+    toolTip.style.display = 'inline-block'
+    toolTip.style.top = (`${e.layerY - 45}px`)
+    toolTip.style.left = (`${e.layerX - 50}px`)
+}
+
+function priphesionalNone() {
+    const toolTip = document.getElementById('tool-tip');
+    toolTip.style.display = 'none'
+}
