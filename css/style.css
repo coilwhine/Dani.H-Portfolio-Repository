@@ -19,6 +19,15 @@ input {
 
 /* ---- elements ---- */
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
 h2 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -331,30 +340,58 @@ header p {
     scroll-margin-block-start: 110px;
 }
 
-.about-me-flex h6 {
-    color: rgb(67, 67, 67);
-    font-size: 0.9rem;
-}
-
-.about-me-flex {
+.about-me-wraper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 30px;
-    width: 95%;
-    margin: auto;
 }
 
-.about-me-paragraph {
-    max-width: 400px;
-    padding: 20px 30px;
-    border-radius: 10px;
-    background-image: linear-gradient(205deg, rgba(52, 166, 192, 0.360) 0%, rgba(61, 166, 110, 0.300) 47%, rgba(251, 203, 145, 0.360) 100%);
-    box-shadow: 0px 10px 60px 5px rgba(3, 39, 47, 0.2);
+.about-me-wraper h3 {}
+
+.about-me {
+    margin: 0 10px;
+    width: 50%;
+    padding: 20px;
 }
 
+.about-me-peregraph {
+    width: 40%;
+}
+
+.about-me-chart {
+    width: 60%;
+}
+
+.chart-strip {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.150);
+    background-image: linear-gradient(to right, rgb(146, 208, 239), rgb(47, 188, 113));
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+
+}
+
+.chart-strip p {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 7px;
+}
+
+.chart-strip span {
+    display: inline-block;
+    padding: 5px;
+    width: 50px;
+    margin: 0;
+    text-align: right;
+    background-color: rgb(47, 188, 113);
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
 
 footer {
     display: flex;
