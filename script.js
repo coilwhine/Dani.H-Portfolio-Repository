@@ -84,7 +84,7 @@ function chartFill() {
 
     for (strip in stripArrays) {
         if (!isNaN(strip)) {
-            stripArrays[strip].style.width = spanValus[strip].innerText
+            stripArrays[strip].style.width = spanValus[strip].innerText;
         }
     }
 }

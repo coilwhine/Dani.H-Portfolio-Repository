@@ -377,13 +377,16 @@ header p {
 .strip-fill {
     position: absolute;
     top: 0;
-    width: 50%;
     height: 100%;
     background-image: linear-gradient(to right, rgb(49, 202, 164), rgb(121, 218, 166), rgb(103, 222, 158));
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 5px 0 0 5px;
     z-index: 1;
+}
+
+.strip-fill:hover {
+    background-image: linear-gradient(to right, rgb(166, 49, 202), rgb(139, 121, 218), rgb(222, 103, 204));
 }
 
 .chart-strip p {
@@ -399,9 +402,9 @@ header p {
 .chart-strip span {
     display: inline-block;
     padding: 5px;
-    width: 50px;
+    width: 10%;
     margin: 0;
-    text-align: right;
+    text-align: center;
     background-color: var(--def-text-color);
     font-weight: 600;
     color: #fff;
