@@ -3,7 +3,8 @@
 
 
 function onLoad() {
-    wellcomeText()
+    wellcomeText();
+    chartFill();
 }
 
 function wellcomeText() {
@@ -16,17 +17,17 @@ function wellcomeText() {
 
         const nameArray = []
         for (string of customerNameArray) {
-            let fLetter = string[0].toUpperCase()
-            let restLetters = (string.slice(1, string.length)).toLowerCase()
-            nameArray.push(fLetter + restLetters)
+            let fLetter = string[0].toUpperCase();
+            let restLetters = (string.slice(1, string.length)).toLowerCase();
+            nameArray.push(fLetter + restLetters);
         }
 
-        let finalName = ''
+        let finalName = '';
         for (word of nameArray) {
-            finalName += word + ' '
+            finalName += word + ' ';
         }
 
-        document.querySelector('.wellcomeText').innerText = `Wellcome back ${finalName}`
+        document.querySelector('.wellcomeText').innerText = `Wellcome back ${finalName}`;
     }
 }
 
@@ -42,9 +43,9 @@ function submitContactMe(event) {
         email: email,
         phoneNumber: phoneNumber,
         answered: false
-    }
+    };
 
-    let customerInquiries = window.localStorage.getItem('customerInquiries');
+    let customerInquiries = window.localStorage.getItem; ('customerInquiries');
     if (!customerInquiries) {
         customerInquiries = [];
     } else {
@@ -53,7 +54,7 @@ function submitContactMe(event) {
 
     customerInquiries.push(newContact);
 
-    window.localStorage.setItem("customerInquiries", JSON.stringify(customerInquiries))
+    window.localStorage.setItem("customerInquiries", JSON.stringify(customerInquiries));
 
 
     document.querySelector('.hero-form').reset();
@@ -61,17 +62,29 @@ function submitContactMe(event) {
 
     setTimeout(function () { document.querySelector('.contact-p').innerText = 'Leave your information and I will get back to you as soon as I can! 😃'; }, 5000);
 
-    wellcomeText()
+    wellcomeText();
 }
 
 function prophesional(e) {
     const toolTip = document.getElementById('tool-tip');
-    toolTip.style.display = 'inline-block'
-    toolTip.style.top = (`${e.layerY - 45}px`)
-    toolTip.style.left = (`${e.layerX - 50}px`)
+    toolTip.style.display = 'inline-block';
+    toolTip.style.top = (`${e.layerY - 45}px`);
+    toolTip.style.left = (`${e.layerX - 50}px`);
 }
 
 function priphesionalNone() {
     const toolTip = document.getElementById('tool-tip');
-    toolTip.style.display = 'none'
+    toolTip.style.display = 'none';
+}
+
+
+function chartFill() {
+    const stripArrays = document.getElementsByClassName('strip-fill');
+    const spanValus = document.getElementsByClassName('strip-span');
+
+    for (strip in stripArrays) {
+        if (!isNaN(strip)) {
+            stripArrays[strip].style.width = spanValus[strip].innerText
+        }
+    }
 }

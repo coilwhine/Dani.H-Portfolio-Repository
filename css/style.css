@@ -1,7 +1,12 @@
+:root {
+    --def-text-color: #212529;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: var(--def-text-color);
 }
 
 html {
@@ -345,8 +350,6 @@ header p {
     justify-content: center;
 }
 
-.about-me-wraper h3 {}
-
 .about-me {
     margin: 0 10px;
     width: 50%;
@@ -362,23 +365,35 @@ header p {
 }
 
 .chart-strip {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.150);
-    background-image: linear-gradient(to right, rgb(146, 208, 239), rgb(47, 188, 113));
-    background-repeat: no-repeat;
-    background-size: 70% 100%;
+}
 
+.strip-fill {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(49, 202, 164), rgb(121, 218, 166), rgb(103, 222, 158));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px 0 0 5px;
+    z-index: 1;
 }
 
 .chart-strip p {
     display: inline-block;
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.8rem;
     padding: 7px;
+    color: #fff;
+    z-index: 2;
+
 }
 
 .chart-strip span {
@@ -387,10 +402,11 @@ header p {
     width: 50px;
     margin: 0;
     text-align: right;
-    background-color: rgb(47, 188, 113);
+    background-color: var(--def-text-color);
     font-weight: 600;
     color: #fff;
     border-radius: 0 5px 5px 0;
+    z-index: 2;
 }
 
 footer {
@@ -498,6 +514,18 @@ footer p {
     .form-btn button:hover::after {
         opacity: 0;
     }
+
+    /* ---- section about me ---- */
+
+    .about-me-wraper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me {
+        width: 90%;
+    }
+
 }
 
 
