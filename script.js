@@ -27,7 +27,7 @@ function wellcomeText() {
             finalName += word + ' ';
         }
 
-        document.querySelector('.wellcomeText').innerText = `Wellcome back ${finalName}`;
+        document.querySelector('.wellcomeText').innerText = `Wellcome ${finalName}`;
     }
 }
 
@@ -71,7 +71,7 @@ function toolTip(e, text) {
     const toolTip = document.getElementById('tool-tip');
     toolTip.innerText = text;
     toolTip.style.display = 'inline-block';
-    toolTip.style.top = (`${e.pageY - 45}px`);
+    toolTip.style.top = (`${e.pageY - 60}px`);
     toolTip.style.left = (`${e.pageX - 35}px`);
 }
 
@@ -88,6 +88,20 @@ function chartFill() {
     for (strip in stripArrays) {
         if (!isNaN(strip)) {
             stripArrays[strip].style.width = (spanValus[strip].innerText);
+        }
+    }
+}
+
+function likeAction(t) {
+    const likeCounters = document.getElementsByClassName('like-counter');
+    const likesBtns = document.getElementsByClassName('like-btn');
+
+    for (i in likesBtns) {
+        if (!isNaN(likeCounters[i].innerText)) {
+            if (t.outerHTML === likesBtns[i].outerHTML) {
+                let newL = parseInt(likeCounters[i].innerText) + 1;
+                likeCounters[i].innerText = newL
+            }
         }
     }
 }

@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    color: var(--def-text-color);
 }
 
 html {
@@ -341,6 +340,51 @@ header p {
     text-shadow: rgb(255, 255, 255) 1px 1px 4px;
 }
 
+.like-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    top: -10px;
+    width: 35px;
+    height: 35px;
+    background-image: linear-gradient(to right, rgb(34, 202, 160), rgb(56, 220, 133));
+    border-radius: 50%;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.841);
+    box-shadow: -2px 2px 4px rgba(3, 39, 5, 0.3);
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+.like-btn:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.like-btn:active {
+    right: -7px;
+    top: -7px;
+    box-shadow: -2px 2px 2px rgba(3, 39, 5, 0.4);
+}
+
+.like-counter {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -7px;
+    bottom: -7px;
+    width: 55px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    color: rgb(76, 76, 76);
+    box-shadow: 2px -2px 3px rgba(3, 39, 5, 0.3);
+}
+
 #section-about-me {
     scroll-margin-block-start: 110px;
 }
@@ -427,14 +471,14 @@ footer {
     margin-top: 40px;
 }
 
-.bi {
+footer .bi {
     margin: 5px 15px;
     font-size: 1.4rem;
     color: #fff;
     transition: 200ms;
 }
 
-.bi:hover {
+footer .bi:hover {
     color: rgb(157, 228, 190);
 }
 
@@ -460,7 +504,44 @@ footer p {
     border-radius: 6px;
     box-shadow: 0px 1px 10px 5px rgba(255, 255, 255, 0.2);
     z-index: 5;
+    white-space: nowrap
 }
+
+#goUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(49, 202, 164), rgb(121, 218, 166), rgb(103, 222, 158));
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px 5px rgba(255, 255, 255, 0.2);
+    font-size: 2rem;
+    color: #fff;
+    z-index: 4;
+}
+
+#goUp .bi {
+    position: relative;
+    top: 1px;
+    color: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 40px;
+    line-height: 0;
+    transition: 100ms ease-in-out;
+}
+
+#goUp:hover .bi {
+    color: rgb(255, 255, 255);
+}
+
+/* .bi-arrow-up-circle-fill {
+    font-size: 2rem;
+    width: ;
+} */
 
 
 /* ---- small leptop device ---- */
@@ -609,7 +690,7 @@ footer p {
 
     /* ---- section footer ---- */
 
-    .bi {
+    footer .bi {
         margin: 5px 8px;
         font-size: 2rem;
     }
