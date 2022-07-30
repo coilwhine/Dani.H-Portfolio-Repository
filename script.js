@@ -65,14 +65,17 @@ function submitContactMe(event) {
     wellcomeText();
 }
 
-function prophesional(e) {
+// tooltip
+
+function toolTip(e, text) {
     const toolTip = document.getElementById('tool-tip');
+    toolTip.innerText = text;
     toolTip.style.display = 'inline-block';
-    toolTip.style.top = (`${e.layerY - 45}px`);
-    toolTip.style.left = (`${e.layerX - 50}px`);
+    toolTip.style.top = (`${e.pageY - 45}px`);
+    toolTip.style.left = (`${e.pageX - 35}px`);
 }
 
-function priphesionalNone() {
+function toolTipNone() {
     const toolTip = document.getElementById('tool-tip');
     toolTip.style.display = 'none';
 }

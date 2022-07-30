@@ -53,8 +53,8 @@
                         solutions for diverse industry organizations.</p>
                 </div>
                 <div class="hero-img">
-                    <img src="img/portrait.jpg" alt="Daniel Hen Portrait" onpointermove="prophesional(event)"
-                        onpointerleave="priphesionalNone()">
+                    <img src="img/portrait.jpg" alt="Daniel Hen Portrait" onpointermove="toolTip(event, 'Daniel')"
+                        onpointerleave="toolTipNone()">
                 </div>
             </div>
         </section>
@@ -134,23 +134,25 @@
                 <div class="about-me about-me-chart">
                     <h3>Profession Chart</h3>
                     <ul class="chart">
-                        <li class="chart-strip">
+                        <li class="chart-strip" onpointermove="toolTip(event, 'HTML')" onpointerleave="toolTipNone()">
                             <div class="strip-fill"></div>
                             <p>HTML</p><span class="strip-span">80%</span>
                         </li>
-                        <li class="chart-strip">
+                        <li class="chart-strip" onpointermove="toolTip(event, 'CSS')" onpointerleave="toolTipNone()">
                             <div class="strip-fill"></div>
                             <p>CSS</p><span class="strip-span">70%</span>
                         </li>
-                        <li class="chart-strip">
+                        <li class="chart-strip" onpointermove="toolTip(event, 'Java Script')"
+                            onpointerleave="toolTipNone()">
                             <div class="strip-fill"></div>
                             <p>Java Script</p><span class="strip-span">40%</span>
                         </li>
-                        <li class="chart-strip">
+                        <li class="chart-strip" onpointermove="toolTip(event, 'PHP')" onpointerleave="toolTipNone()">
                             <div class="strip-fill"></div>
                             <p>PHP</p><span class="strip-span">20%</span>
                         </li>
-                        <li class="chart-strip">
+                        <li class="chart-strip" onpointermove="toolTip(event, 'Photoshop')"
+                            onpointerleave="toolTipNone()">
                             <div class="strip-fill"></div>
                             <p>Photoshop</p><span class="strip-span">75%</span>
                         </li>
